@@ -11,7 +11,7 @@ body {
   height: 1415px;
   left: 2445px;
   top: -2311px;
-  background:  #191765 url(./Ellipse\ 18.svg) no-repeat 0% 2%;
+  background: #191765 url(./Ellipse\ 18.svg) no-repeat 0% 2%;
 }
 
 .header {
@@ -145,7 +145,7 @@ hr {
   flex-basis: content;
   flex-flow: wrap;
   margin: 0 0% 0 2%;
-  background: url(./Ellipse\ 19.svg) no-repeat 100% 2%
+  background: url(./Ellipse\ 19.svg) no-repeat 100% 2%;
 }
 
 .items {
