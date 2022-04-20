@@ -132,7 +132,7 @@ hr{
     display:flex;
     flex-basis: content;
     flex-flow: wrap;
-    margin: 0 3%;
+    margin: 0 2%;
 }
 .items{
     color: #9490FF;
