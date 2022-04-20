@@ -169,13 +169,3 @@ hr{
     width: 17.99px;
     height: 20px;
 }
-img{
-    position: absolute;
-width: 160px;
-height: 160px;
-left: -106px;
-top: 0px;
-
-background: #EDECFF;
-filter: blur(50px);
-}
