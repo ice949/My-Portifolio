@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  width: 375px;
+  height: 1415px;
+  left: 2445px;
+  top: -2311px;
+  background: #191765 url(./Ellipse\ 18.svg) no-repeat 0% 2%;
+}
+
+.header {
+  width: 100%;
+  margin: 10px;
+  position: fixed;
+}
+
+#logo {
+  cursor: pointer;
+  color: #edecff;
+  width: fit-content;
+  position: fixed;
+  left: 10%;
+  top: 3%;
+  height: 5%;
+}
+
+#menu-mobile .nav-items {
+  display: none;
+  z-index: 41;
+}
+
+#menu-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+}
+
+.menuBtn {
+  font-size: 30px;
+  cursor: pointer;
+  color: #edecff;
+  width: fit-content;
+  position: fixed;
+  right: 10%;
+  top: 2%;
+  height: 5%;
+}
+
+hr {
+  margin: 15px;
+  border: 1px solid #646369;
+}
+
+.menu {
+  color: #fff;
+  width: 33.3px;
+  height: 30px;
+  position: absolute;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 24px;
+  margin: 25% 4% 4% 2%;
+  width: 94%;
+  text-align: center;
+}
+
+.desc {
+  height: 170px;
+  width: 327px;
+  color: #c8c8d4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  position: static;
+}
+
+.profession {
+  position: static;
+  width: 327px;
+  height: 87px;
+  left: 0;
+  top: 67px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #edecff;
+  margin-top: 29px;
+  margin-bottom: 35px;
+}
+
+.name {
+  position: static;
+  width: 327px;
+  height: 55px;
+  left: 0;
+  top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: 0.37px;
+  color: #7d73fc;
+}
+
+.logo {
+  position: static;
+  width: 81px;
+  height: 16px;
+  left: 12px;
+  top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.container1 {
+  display: flex;
+  flex-basis: content;
+  flex-flow: wrap;
+  margin: 0 0% 0 2%;
+  background: url(./Ellipse\ 19.svg) no-repeat 100% 2%;
+}
+
+.items {
+  color: #9490ff;
+  margin: 20px;
+  width: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.items li {
+  color: #f5f5ff;
+  margin: 20px 0;
+  width: 103.55px;
+  height: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  margin-top: 58px;
+}
+
+.item2 {
+  margin: 5px;
+  color: #fff;
+  width: 17.99px;
+  height: 20px;
+}
