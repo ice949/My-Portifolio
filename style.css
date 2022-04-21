@@ -261,8 +261,7 @@ hr {
   background: #1e0ff1;
 }
 
-
-.btn:active{
+.btn.btn:active {
   background: #191765;
 }
 
