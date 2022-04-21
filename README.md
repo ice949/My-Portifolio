@@ -15,8 +15,14 @@
 
 [Live Demo Link](https://livedemo.com)
 
+## Getting Started
 
+To get a local copy up and running follow these simple example steps.
 
+- Clone repository in your local machine 
+- git clone https://github.com/ice949/My-Portifolio
+- cd My-Portifolio
+- open `index.html` in your browser.
 
 
 
