@@ -180,7 +180,7 @@ hr {
   margin-top: 58px;
 }
 
-.item2 {
+.item2 a {
   margin: 5px;
   color: #fff;
   width: 17.99px;
@@ -254,10 +254,16 @@ hr {
   background: #7d73fc;
   border: none;
   width: fit-content;
+  padding: 5px;
 }
 
 .btn.btn:hover {
   background: #1e0ff1;
+}
+
+
+.btn:active{
+  background: #191765;
 }
 
 .cd11,
