@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -60,6 +62,7 @@ body {
 hr {
   margin: 15px;
   border: 1px solid #646369;
+  width: 85%;
 }
 
 .menu {
@@ -212,7 +215,9 @@ hr {
 .cd11 {
   min-width: 280px;
   height: 236px;
-  background: linear-gradient(0deg, #f9f9f9, #f9f9f9), url(image_processing20200716-21735-f07s4k.png);
+  background:
+    linear-gradient(0deg, #f9f9f9, #f9f9f9),
+    url("image_processing20200716-21735-f07s4k.png");
 }
 
 .cd12 {
@@ -245,13 +250,11 @@ hr {
 }
 
 .btn {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
   color: #edecff;
@@ -259,21 +262,25 @@ hr {
   border: none;
   width: fit-content;
   padding: 5px;
+  margin: 20px 6%;
 }
 
-.btn.btn:hover {
-  background: #1e0ff1;
+.btn:hover {
+  background: #7d73fc;
 }
 
-.btn.btn:active {
-  background: #191765;
+.btn:active {
+  background: #7d73fc;
+}
+
+.btn:focus {
+  background: #5e42d7;
 }
 
 .cd11,
 .cd12,
 .cd13,
-.cd14,
-.btn {
+.cd14 {
   margin: 20px 6%;
 }
 
@@ -311,4 +318,112 @@ hr {
 
 .cards {
   display: grid;
+}
+
+.footer p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 28px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  margin: 0 20px 20px;
+  padding: 30px 0;
+}
+
+.contact-form .contact-container h3 {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  line-height: 44px;
+  color: #9390ff;
+  margin: 0 0 20px 0;
+}
+
+.contact-form .contact-container p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  line-height: 24px;
+  color: #f5f5ff;
+  margin: 0 0 20px 0;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form form input {
+  width: 327px;
+  height: 48px;
+}
+
+.contact-form form input[placeholder],
+.contact-form form textarea[placeholder] {
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+}
+
+.contact-form form input[type="text"],
+textarea {
+  color: #81818c;
+}
+
+.contact-form form input[type="email"] {
+  color: #191765;
+}
+
+.contact-form form textarea {
+  width: 327px;
+  height: 148px;
+}
+
+.contact-form button {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 24px;
+  width: 89px;
+  margin: auto;
+  height: 48px;
+  margin-top: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 20px;
+}
+
+.footer-contacts {
+  color: #dcdce8;
+  display: flex;
+  text-align: center;
+}
+
+.footer-contacts div a i {
+  font-size: 20px;
+}
+
+.footer a {
+  color: #ebebff;
+  margin-bottom: 20px;
+}
+
+.footer-line {
+  width: 100%;
+  color: #3a3837;
 }
