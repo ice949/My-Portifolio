@@ -62,6 +62,7 @@ body {
 hr {
   margin: 15px;
   border: 1px solid #646369;
+  width: 85%;
 }
 
 .menu {
@@ -214,8 +215,9 @@ hr {
 .cd11 {
   min-width: 280px;
   height: 236px;
-  background-color: linear-gradient(0deg, #f9f9f9, #f9f9f9);
-  background-image: url("image_processing20200716-21735-f07s4k.png");
+  background:
+    linear-gradient(0deg, #f9f9f9, #f9f9f9),
+    url("image_processing20200716-21735-f07s4k.png");
 }
 
 .cd12 {
@@ -318,6 +320,13 @@ hr {
   display: grid;
 }
 
+.footer p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 28px;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -391,8 +400,22 @@ textarea {
   margin-top: 20px;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 20px;
+}
+
 .footer-contacts {
-  color: #dcdce8
+  color: #dcdce8;
+  display: flex;
+  text-align: center;
+}
+
+.footer-contacts div a i {
+  font-size: 20px;
 }
 
 .footer a {
@@ -400,11 +423,7 @@ textarea {
   margin-bottom: 20px;
 }
 
-.footer-contacts {
-  display: flex;
-  text-align: center;
-}
-
 .footer-line {
   width: 100%;
+  color: #3a3837;
 }
