@@ -7,7 +7,10 @@
 }
 
 body {
-  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   height: 4415px;
   left: 2445px;
   top: -2311px;
@@ -142,8 +145,9 @@ hr {
 
 .container1 {
   display: flex;
-  flex-basis: content;
+  width: 98%;
   flex-flow: wrap;
+  justify-content: center;
   margin: 0 0% 0 2%;
   background: url(./Ellipse\ 19.svg) no-repeat 100% 2%;
 }
@@ -206,7 +210,7 @@ hr {
 }
 
 .cd11 {
-  width: 327px;
+  min-width: 280px;
   height: 236px;
   background: linear-gradient(0deg, #f9f9f9, #f9f9f9), url(image_processing20200716-21735-f07s4k.png);
 }
