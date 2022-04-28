@@ -17,6 +17,9 @@ body {
   left: 2445px;
   top: -2311px;
   background: #191765 url(./Ellipse\ 18.svg) no-repeat 0% 2%;
+  background-image: url(Ellipse\ 18.svg), url(Ellipse\ 19.svg), url(Ellipse\ 20.svg), url(Ellipse\ 21.svg), url(Ellipse\ 22.svg), url(Ellipse\ 23.svg);
+  background-position: left 2%, right 13%, left 38%, right 57%, left 74%, right 92%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
 .header {
@@ -78,7 +81,7 @@ hr {
   align-items: center;
   justify-content: center;
   margin: 24px;
-  margin: 25% 4% 4% 2%;
+  margin: 135px 4% 4% 2%;
   width: 94%;
   text-align: center;
 }
@@ -114,10 +117,6 @@ hr {
 
 .name {
   position: static;
-  width: 327px;
-  height: 55px;
-  left: 0;
-  top: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -152,7 +151,6 @@ hr {
   flex-flow: wrap;
   justify-content: center;
   margin: 0 0% 0 2%;
-  background: url(./Ellipse\ 19.svg) no-repeat 100% 2%;
 }
 
 .items {
@@ -273,10 +271,10 @@ hr {
   background: #7d73fc;
 }
 
-.btn:focus {
+/* .btn:focus {
   background: #5e42d7;
 }
-
+*/
 .cd11,
 .cd12,
 .cd13,
@@ -287,25 +285,21 @@ hr {
 .work1 {
   display: flex;
   flex-direction: column;
-  background: url(./Ellipse\ 20.svg) no-repeat 0 40%;
 }
 
 .work2 {
   display: flex;
   flex-direction: column;
-  background: url(./Ellipse\ 21.svg) no-repeat 100% 40%;
 }
 
 .work3 {
   display: flex;
   flex-direction: column;
-  background: url(./Ellipse\ 22.svg) no-repeat 0 40%;
 }
 
 .work4 {
   display: flex;
   flex-direction: column;
-  background: url(./Ellipse\ 23.svg) no-repeat 100% 50%;
 }
 
 .cdlinks {
@@ -362,7 +356,7 @@ hr {
 }
 
 .contact-form form input {
-  width: 327px;
+  width: 310px;
   height: 48px;
 }
 
@@ -377,7 +371,7 @@ hr {
 
 .contact-form form input[type="text"],
 textarea {
-  color: #81818c;
+  color: #191765;
 }
 
 .contact-form form input[type="email"] {
@@ -385,7 +379,7 @@ textarea {
 }
 
 .contact-form form textarea {
-  width: 327px;
+  width: 310px;
   height: 148px;
 }
 
@@ -426,4 +420,156 @@ footer {
 .footer-line {
   width: 100%;
   color: #3a3837;
+}
+
+.work-link {
+  display: none;
+  z-index: 41;
+}
+
+.name-input {
+  display: none;
+}
+
+.desk {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container1,
+  .main-section,
+  hr,
+  .desc {
+    width: 448px;
+    margin-top: 50px;
+  }
+
+  .main-section {
+    margin-top: 165px;
+  }
+
+  .items {
+    margin: 0;
+  }
+
+  #menu-mobile .nav-items {
+    display: flex;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    color: #edecff;
+    width: fit-content;
+    position: fixed;
+    right: 10%;
+    top: 3%;
+    height: 5%;
+  }
+
+  #menu-mobile .nav-items li {
+    margin-left: 10px;
+  }
+
+  #menu-mobile .nav-items a {
+    color: #fff;
+  }
+
+  #menu-mobile .menuBtn {
+    display: none;
+    z-index: 41;
+  }
+
+  body {
+    background-image: url(circle1.svg), url(circle2.svg), url(circle3.svg), url(circle4.svg), url(circle5.svg), url(circle6.svg);
+    background-position: left 2%, right 13%, left 44%, right 59%, left 68%, right 78%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    height: auto;
+  }
+
+  .work1,
+  .work2,
+  .work3,
+  .work4 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cd11 {
+    margin-left: 40px;
+    width: 55%;
+    height: 90%;
+  }
+
+  .cont {
+    width: 35%;
+  }
+
+  .work2,
+  .work4 {
+    flex-direction: row-reverse;
+  }
+
+  .cards,
+  .hr2 {
+    width: 75%;
+  }
+
+  .snip {
+    text-align: left;
+    float: left;
+  }
+
+  .work-link {
+    display: initial;
+    color: #c8c8d4;
+    margin-left: 105px;
+    margin-right: 105px;
+  }
+
+  .work {
+    display: none;
+    z-index: 41;
+  }
+
+  .contacts {
+    width: 100%;
+  }
+
+  .input-name {
+    display: none;
+  }
+
+  .contact-form form textarea {
+    width: 622px;
+    height: 148px;
+  }
+
+  .name-input input {
+    display: initial;
+    width: 300px;
+  }
+
+  .contact-form form input {
+    width: 622px;
+  }
+
+  .name-input {
+    display: flex;
+    width: 620px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .desk {
+    display: initial;
+    font-weight: bolder;
+  }
+
+  .mobile {
+    display: none;
+  }
 }
