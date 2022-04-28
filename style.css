@@ -117,8 +117,6 @@ hr {
 
 .name {
   position: static;
-  width: 327px;
-  height: 55px;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -373,7 +371,7 @@ hr {
 
 .contact-form form input[type="text"],
 textarea {
-  color: #81818c;
+  color: #191765;
 }
 
 .contact-form form input[type="email"] {
@@ -427,6 +425,14 @@ footer {
 .work-link {
   display: none;
   z-index: 41;
+}
+
+.name-input {
+  display: none;
+}
+
+.desk {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -512,16 +518,11 @@ footer {
     float: left;
   }
 
-  .footer {
-    display: flex;
-    justify-content: center;
-  }
-
   .work-link {
     display: initial;
     color: #c8c8d4;
-    margin-left: 175px;
-    margin-right: 175px;
+    margin-left: 105px;
+    margin-right: 105px;
   }
 
   .work {
@@ -531,5 +532,44 @@ footer {
 
   .contacts {
     width: 100%;
+  }
+
+  .input-name {
+    display: none;
+  }
+
+  .contact-form form textarea {
+    width: 622px;
+    height: 148px;
+  }
+
+  .name-input input {
+    display: initial;
+    width: 300px;
+  }
+
+  .contact-form form input {
+    width: 622px;
+  }
+
+  .name-input {
+    display: flex;
+    width: 620px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .desk {
+    display: initial;
+    font-weight: bolder;
+  }
+
+  .mobile {
+    display: none;
   }
 }

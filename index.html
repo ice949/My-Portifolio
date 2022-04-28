@@ -21,7 +21,7 @@
   <body>
     <header class="header">
       <div id="menu-mobile">
-        <a href="#" id="logo">John Doe</a>
+        <a href="#" id="logo">Ice-berg</a>
         <nav class="navMenu">
           <div class="menuBtn"><i class="fas fa-bars"></i></div>
           <ul class="nav-items">
@@ -42,7 +42,7 @@
       </div>
     </header>
     <section class="main-section">
-      <h1 class="name">Laura Jong</h1>
+      <h1 class="name">Justine Imasiku</h1>
       <div class="profession"><p>Software Developer</p></div>
       <p class="desc">
         I can help you build a product , feature or website Look through some of
@@ -84,7 +84,7 @@
     </section>
     <hr />
     <div class="contacts">
-      <div class="work-link"><i class="fa-solid fa-arrow-down-long"></i>Work</div>
+      <div class="work-link">work<i class="fa-solid fa-arrow-down-long"></i></div>
       <div class="item2">
         <a href="#"><i class="fa-brands fa-github"></i></a>
       </div>
@@ -189,7 +189,8 @@
     </section>
     <section class="contact-form">
       <div class="contact-container">
-        <h3>CONTACT US</h3>
+        <h3 class="mobile">CONTACT US</h3>
+        <h3 class="desk">Let's Chat!</h3>
         <p>
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
@@ -201,9 +202,28 @@
       "
         method="post"
       >
+      <div class="name-input">
         <input
           type="text"
           id="u_name"
+          name="u_name"
+          placeholder="First Name"
+          value="Jeremy"
+          maxlength="30"
+          required
+        />
+        <input
+          type="text"
+          id="u_name"
+          name="u_name"
+          placeholder="Last Name"
+          maxlength="30"
+          required
+        /></div>
+        <input
+          type="text"
+          class="input-name"
+          id="user_name"
           name="u_name"
           placeholder="Text Input"
           maxlength="30"
@@ -211,9 +231,10 @@
         />
         <input
           type="email"
+          class="email-input"
           id="email"
           name="email"
-          placeholder="your email here"
+          placeholder="Email Address"
           value="jeremy@gmail.com"
           required
         />
