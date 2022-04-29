@@ -20,9 +20,22 @@ body {
   background-image: url(Ellipse\ 18.svg), url(Ellipse\ 19.svg), url(Ellipse\ 20.svg), url(Ellipse\ 21.svg), url(Ellipse\ 22.svg), url(Ellipse\ 23.svg);
   background-position: left 2%, right 13%, left 38%, right 57%, left 74%, right 92%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  animation-name: img;
+  animation-duration: 12s;
+
+  /* animation-delay: 3s; */
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transition-property: transform;
+  transition-duration: 1s;
 }
 
-.header {
+@keyframes img {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+body .header {
   width: 100%;
   margin: 10px;
   position: fixed;
@@ -143,6 +156,22 @@ hr {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
+  opacity: 0;
+  animation-name: logo;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration: 5s;
+}
+
+@keyframes logo {
+  0% { rotate: 180deg; }
+  100% { rotate: 360deg; }
+}
+
+#logo:hover {
+  transform: rotateY(360deg);
 }
 
 .container1 {
@@ -261,10 +290,23 @@ hr {
   width: fit-content;
   padding: 5px;
   margin: 20px 6%;
+  opacity: 0;
+  animation-name: btn;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+@keyframes btn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .btn:hover {
   background: #7d73fc;
+  transform: rotateY(360deg);
 }
 
 .btn:active {
@@ -478,7 +520,7 @@ footer {
     z-index: 41;
   }
 
-  body {
+  .body {
     background-image: url(circle1.svg), url(circle2.svg), url(circle3.svg), url(circle4.svg), url(circle5.svg), url(circle6.svg);
     background-position: left 2%, right 13%, left 44%, right 59%, left 68%, right 78%;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
