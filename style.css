@@ -17,9 +17,13 @@ body {
   left: 2445px;
   top: -2311px;
   background: #191765 url(./Ellipse\ 18.svg) no-repeat 0% 2%;
-  background-image: url(Ellipse\ 18.svg), url(Ellipse\ 19.svg), url(Ellipse\ 20.svg), url(Ellipse\ 21.svg), url(Ellipse\ 22.svg), url(Ellipse\ 23.svg);
-  background-position: left 2%, right 13%, left 38%, right 57%, left 74%, right 92%;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-image: url(Ellipse\ 18.svg), url(Ellipse\ 19.svg),
+    url(Ellipse\ 20.svg), url(Ellipse\ 21.svg), url(Ellipse\ 22.svg),
+    url(Ellipse\ 23.svg);
+  background-position: left 2%, right 13%, left 38%, right 57%, left 74%,
+    right 92%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat;
   animation-name: img;
   animation-duration: 12s;
 
@@ -31,8 +35,12 @@ body {
 }
 
 @keyframes img {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 body .header {
@@ -51,12 +59,6 @@ body .header {
   height: 5%;
   font-family: "Roboto", sans-serif;
   transition: all 20s ease-out;
-}
-
-#logo:hover{
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 16px;
 }
 
 #menu-mobile .nav-items {
@@ -174,12 +176,19 @@ hr {
 }
 
 @keyframes logo {
-  0% { rotate: 180deg; }
-  100% { rotate: 360deg; }
+  0% {
+    rotate: 180deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }
 
 #logo:hover {
   transform: rotateY(360deg);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 .container1 {
@@ -250,8 +259,7 @@ hr {
 .cd11 {
   min-width: 280px;
   height: 236px;
-  background:
-    linear-gradient(0deg, #f9f9f9, #f9f9f9),
+  background: linear-gradient(0deg, #f9f9f9, #f9f9f9),
     url("image_processing20200716-21735-f07s4k.png");
 }
 
@@ -308,8 +316,12 @@ hr {
 }
 
 @keyframes btn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .btn:hover {
@@ -529,9 +541,12 @@ footer {
   }
 
   .body {
-    background-image: url(circle1.svg), url(circle2.svg), url(circle3.svg), url(circle4.svg), url(circle5.svg), url(circle6.svg);
-    background-position: left 2%, right 13%, left 44%, right 59%, left 68%, right 78%;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-image: url(circle1.svg), url(circle2.svg), url(circle3.svg),
+      url(circle4.svg), url(circle5.svg), url(circle6.svg);
+    background-position: left 2%, right 13%, left 44%, right 59%, left 68%,
+      right 78%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      no-repeat;
     height: auto;
   }
 
