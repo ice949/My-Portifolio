@@ -31,7 +31,7 @@ To get a local copy up and running follow these simple example steps.
 👤 **Justine Imasiku**
 
 - GitHub: [@ice949](https://github.com/ice949)
-- Twitter: [@christian_siku](https://twitter.com/christian_siku )
+- Twitter: [@justine_imasiku](https://twitter.com/justine_imasiku )
 - LinkedIn: [Justine Imasiku](https://www.linkedin.com/in/justine-imasiku-7a25881a5/)
 
 👤 **Justine Imasiku**
