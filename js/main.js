@@ -1,24 +1,22 @@
 const menu = document.querySelector(".bars");
 const navItems = document.querySelector(".nav-items")
-const close = document.querySelector(".close");
+const closeB = document.querySelector(".closeBtn");
 const navLinks = document.querySelectorAll(".nav-links");
-// menu.addEventListener("click ", (e) => {
-//     navItems.classList.add("nav-bar")
-//     console.log(e.target);
 
-
-// })
 
 menu.addEventListener('click', () => {
 
-    navItems.classList.add("nav-bar")
-    console.log(navItems)
+    navItems.classList.toggle("nav-bar")
+    closeB.style.display = "flex"
+    menu.style.display = "none"
 })
 
 function closeBtn() {
     navItems.classList.remove("nav-bar");
+    menu.style.display = "block"
+
 }
-close.addEventListener("click", closeBtn);
+
 navLinks.forEach((element) => {
     element.addEventListener("click", closeBtn);
 });
