@@ -1,8 +1,8 @@
+// menu
 const menu = document.querySelector(".bars");
 const navItems = document.querySelector(".nav-items")
 const closeB = document.querySelector(".closeBtn");
 const navLinks = document.querySelectorAll(".nav-links");
-
 
 menu.addEventListener('click', () => {
 
@@ -20,3 +20,5 @@ function closeBtn() {
 navLinks.forEach((element) => {
     element.addEventListener("click", closeBtn);
 });
+
+// popup
