@@ -461,6 +461,10 @@ footer {
   text-align: center;
 }
 
+.nav-bar a i {
+  color: #acb7c3;
+}
+
 .footer-contacts div a i {
   font-size: 20px;
 }
