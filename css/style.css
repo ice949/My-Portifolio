@@ -529,6 +529,7 @@ footer {
 .closeBtn {
     display: flex;
     justify-content: right;
+    font-size: 35px;
 }
 
 .display {
