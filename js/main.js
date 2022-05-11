@@ -27,47 +27,6 @@ const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
 
-// openModalButtons.forEach(button => {
-//     button.addEventListener('click', () => {
-//         const modal = document.querySelector(button.dataset.modalTarget)
-//         openModal(modal)
-//     })
-// })
-
-
-// overlay.addEventListener('click', () => {
-//     const modals = document.querySelectorAll('.modal.active')
-//     modals.forEach(modal => {
-//         closeModal(modal)
-//     })
-// })
-
-// closeModalButtons.forEach(button => {
-//     button.addEventListener('click', () => {
-//         const modal = button.closest('.modal')
-//         closeModal(modal)
-//     })
-// })
-
-// function openModal(modal) {
-//     if (modal == null) return
-//     modal.classList.add('active')
-//     overlay.classList.add('active')
-// }
-
-
-
-
-// //CARDS 
-// const seeProject = document.querySelectorAll('.btn-pop');
-// const popup = document.querySelector('.pop-bg');
-
-// seeProject.forEach((project) => {
-//   project.addEventListener('click', () => {
-//     popup.classList.add('display');
-//   });
-// });
-
 const cards = [
     {   id:1,
         heading: 'Multi-Post Stories',
@@ -138,9 +97,6 @@ const cards = [
     }
 ]
 
-// const ul = document.querySelector('.cards');
-// const popDiv = document.querySelector('.pop-bg');
-
 const projecCards = cards
   .map(
     (card) => `
@@ -164,8 +120,6 @@ const projecCards = cards
 ).join('');
 
   box.innerHTML += projecCards
-
-
 
   const popUp = (card) => {
       const temp = document.createElement('template')
@@ -202,57 +156,4 @@ const modal = (id) => {
 
 function closeModal() {
     popUpBtn.classList.remove('active')
-    // overlay.classList.remove('active')
 }
-
-
-// ul.innerHTML += projecCards;
-
-// const modalData = (card) => {
-//   const template = document.createElement('template');
-
-//   template.innerHTML = `
-//         <li class="card-details pop-data">
-//           <div class="close-btn">
-//           <img class="close-x" onclick=(vanish()) src="./close.png" alt="close"></div>
-//          <div> <h2 class="title t-pop">${card.title}</h2></div>
-//          <div>
-//           <ul class="tech-btns pop-btns">
-//             <li>CANOPY</li>
-//             <li class="common">Back End Dev</li>
-//             <li class="common">2015</li>
-//           </ul>
-//           </div>
-//           <div class="image">
-          
-//             <img src="${card.image}" alt="tonic" />
-//           </div>
-//           <div class="text-div pop-div">
-//             <p class="paragraph p-pop">
-//             ${card.description}
-//             </p>
-//             <div>
-//             <ul class="languages">
-//             ${card.language.map((lang) => `<li>${lang}</li>`).join('')}
-//             </ul>
-//             <div class="links">
-//             <button class="see-project see-project-dsk" data-index-number="2" href="${
-//   card.links[0]
-// }"
-//               >See live <span> <img class="logo-tag" src="./Icon.png" alt="" srcset=""></span> </button
-//             >
-//              <button class="see-project see-project-dsk" data-index-number="2" href="${
-//   card.links[1]
-// }"
-//               >See source <span><img class="logo-tag" src="./Vector.png" alt="" srcset=""></span> 
-//             </button>
-//           </div>
-//           </div>
-//           </div>
-//         </li>
-    
-//     `;
-
-//   popDiv.appendChild(template.content);
-// };
-
