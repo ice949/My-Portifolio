@@ -36,9 +36,9 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **ndikumanaisaie**
 
-- GitHub: [@ndikumanaisaie](https://github.com/ndikumanaisaie)
-- Twitter: [@ndikumana_isaie](https://twitter.com/ndikumana_isaie )
-- LinkedIn: [ndikumana isaie ](https://www.linkedin.com/in/ndikumana-isaie-21166273/ )
+- GitHub: [gitHub](https://github.com/ndikumanaisaie)
+- Twitter: [twitter](https://twitter.com/Ndikuma38670724) 
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ndikumana-isaie-21166273/) 
 ## Show your support
 
 Give a ⭐️ if you like this project!
