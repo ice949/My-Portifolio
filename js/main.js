@@ -79,7 +79,7 @@ const cards = [
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,.`,
     languages: ['css', 'HTML', 'Bootstrap', 'Ruby'],
     languages2: ['css', 'HTML', 'Ruby on Rails', 'Github'],
-    image: '/images/popup.png',
+    image: './images/popup.png',
     button: 'See project',
     seelive: 'See live',
     seesource: 'See source',
