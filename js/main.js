@@ -35,7 +35,7 @@ const cards = [
     languages: ['css', 'HTML', 'Bootstrap', 'Ruby'],
     languages2: ['css', 'HTML', 'Ruby on Rails', 'Github'],
 
-    image: '../images/popup.png',
+    image: './popup.png',
     seelive: 'See live',
     seesource: 'See source',
     button: 'See project',
@@ -51,7 +51,7 @@ const cards = [
     languages2: ['css', 'HTML', 'Ruby on Rails', 'Github'],
 
     button: 'See project',
-    image: '../images/popup.png',
+    image: './popup.png',
     seelive: 'See live',
     seesource: 'See source',
   },
@@ -65,7 +65,7 @@ const cards = [
     languages: ['css', 'HTML', 'Bootstrap', 'Ruby'],
     languages2: ['css', 'HTML', 'Ruby on Rails', 'Github'],
 
-    image: '../images/popup.png',
+    image: './popup.png',
 
     button: 'See project',
     seelive: 'See live',
@@ -79,7 +79,7 @@ const cards = [
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,.`,
     languages: ['css', 'HTML', 'Bootstrap', 'Ruby'],
     languages2: ['css', 'HTML', 'Ruby on Rails', 'Github'],
-    image: '../images/popup.png',
+    image: './popup.png',
     button: 'See project',
     seelive: 'See live',
     seesource: 'See source',
