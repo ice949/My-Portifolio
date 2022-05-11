@@ -296,22 +296,12 @@ button {
     width: fit-content;
     padding: 5px;
     margin: 20px 6%;
-    opacity: 0;
     animation-name: btn;
     animation-duration: 3s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
     transition-property: transform;
     transition-duration: 1s;
-}
-
-@keyframes btn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 button:hover {
@@ -545,9 +535,9 @@ footer {
     background-color: #191765;
     width: 90%;
     max-width: 90%;
-    height: 100vh;
-    color: #344563;
-    ;
+    height: 98%;
+    min-height: fit-content;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -558,7 +548,7 @@ footer {
 }
 
 .modal-header {
-    padding: 10px 15px;
+    padding: 5px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -587,38 +577,45 @@ footer {
 
 .modal img {
     width: 85%;
-    height: 30%;
+    height: 25%;
 }
 
 .modal-body {
     padding: 10px 0;
     text-align: center;
     width: 90%;
-    line-height: 24px;
-    font-size: 16px;
+    line-height: 18px;
+    font-size: 14px;
     font-weight: 400;
 }
 
 .modal ul {
-    /* width: 85%;
-    height: 30%; */
+    font-size: 13px;
+    line-height: 17px;
     display: flex;
     border-right: 1px solid;
 }
 
 .modal ul li {
-    padding: 10px 20px;
-    color: #344563;
+    padding: 6px 15px;
+    color: #ebebff;
     /* border-right: 2px solid; */
     border-left: 1px solid;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 13px;
+    line-height: 17px;
 }
 
 .dis {
     display: none;
+}
+
+.p-btn {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -756,5 +753,11 @@ footer {
 
     .dis {
         display: block;
+    }
+    .p-btn {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
     }
 }

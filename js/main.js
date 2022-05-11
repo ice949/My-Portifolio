@@ -33,9 +33,7 @@ const cards = [
         description: `A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.`,
         description2 : `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it 1960s with the
-        releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s,
-        when an unknown printer took a galley of type veris lapoa todoe.`,
+        when an unknown printer took a galley of type and scrambled it 1960s `,
         languages: ['css', 'HTML','Bootstrap', 'Ruby'],
         languages2: ['css', 'HTML', 'Ruby on Rails','Github'],
 
@@ -50,9 +48,7 @@ const cards = [
         description: `A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.`,
         description2 : `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it 1960s with the
-        releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s,
-        when an unknown printer took a galley of type veris lapoa todoe.`,
+        when an unknown printer took a galley of type and scrambled it 1960s `,
         languages: ['css', 'HTML','Bootstrap', 'Ruby'],
         languages2: ['css', 'HTML', 'Ruby on Rails','Github'],
 
@@ -67,9 +63,7 @@ const cards = [
         description: `A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.`,
         description2 : `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it 1960s with the
-        releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s,
-        when an unknown printer took a galley of type veris lapoa todoe.`,
+        `,
         languages: ['css', 'HTML','Bootstrap', 'Ruby'],
         languages2: ['css', 'HTML', 'Ruby on Rails','Github'],
 
@@ -84,10 +78,7 @@ const cards = [
         heading: 'Multi-Post Stories',
         description: `A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.`,
         description2 : `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it 1960s with the
-        releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s,
-        when an unknown printer took a galley of type veris lapoa todoe.`,
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,.`,
         languages: ['css', 'HTML','Bootstrap', 'Ruby'],
         languages2: ['css', 'HTML', 'Ruby on Rails','Github'],
         image: "/images/popup.png",
@@ -123,6 +114,7 @@ const projecCards = cards
 
   const popUp = (card) => {
       const temp = document.createElement('template')
+      popUpBtn.innerHTML = '';
       temp.innerHTML = `
     <div class="modal-header">
         <h3 class="cd12">${card.heading}</h3>
@@ -135,11 +127,13 @@ const projecCards = cards
     <ul>
     ${card.languages2.map((lang) => `<li>${lang}</li>`).join('')}
     </ul>
-    <button>${card.seelive}</button>
-    <button>${card.seesource}</button>
+    <div class="p-btn">
+    <button>${card.seelive} <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+    <button>${card.seesource} <i class="fa-brands fa-github"></i></button>
+    </div>
       `
       popUpBtn.classList.add('active')
-      popUpBtn.appendChild(temp.content)
+      popUpBtn.append(temp.content)
 
 
   }
