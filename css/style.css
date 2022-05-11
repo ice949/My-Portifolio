@@ -435,12 +435,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.6rem;
     padding-bottom: 20px;
 }
 
 .footer-contacts {
-    color: #dcdce8;
+    color: #dcdce7;
     display: flex;
     text-align: center;
 }
