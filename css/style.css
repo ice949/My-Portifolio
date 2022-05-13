@@ -17,9 +17,27 @@ body {
   left: 2445px;
   top: -2311px;
   background: #191765 url(./Ellipse\ 18.svg) no-repeat 0% 2%;
-  background-image: url(/images/Ellipse\ 18.svg), url(/images/Ellipse\ 19.svg), url(/images/Ellipse\ 20.svg), url(/images/Ellipse\ 21.svg), url(/images/Ellipse\ 22.svg), url(/images/Ellipse\ 23.svg);
-  background-position: left 2%, right 13%, left 38%, right 57%, left 74%, right 92%;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-image:
+    url(/images/Ellipse\ 18.svg),
+    url(/images/Ellipse\ 19.svg),
+    url(/images/Ellipse\ 20.svg),
+    url(/images/Ellipse\ 21.svg),
+    url(/images/Ellipse\ 22.svg),
+    url(/images/Ellipse\ 23.svg);
+  background-position:
+    left 2%,
+    right 13%,
+    left 38%,
+    right 57%,
+    left 74%,
+    right 92%;
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
   animation-name: img;
   animation-duration: 12s;
 
@@ -244,7 +262,9 @@ hr {
 .cd11 {
   min-width: 280px;
   height: 236px;
-  background: linear-gradient(0deg, #f9f9f9, #f9f9f9), url("image_processing20200716-21735-f07s4k.png");
+  background:
+    linear-gradient(0deg, #f9f9f9, #f9f9f9),
+    url("image_processing20200716-21735-f07s4k.png");
 }
 
 .cd12 {
@@ -403,10 +423,12 @@ button:hover {
 .contact-form form input[type="text"],
 textarea {
   color: #191765;
+  margin-top: 15px;
 }
 
 .contact-form form input[type="email"] {
   color: #191765;
+  margin-top: 15px;
 }
 
 .contact-form form textarea {
@@ -423,6 +445,26 @@ textarea {
   margin: auto;
   height: 48px;
   margin-top: 20px;
+}
+
+.name-input {
+  display: none;
+}
+
+.contact-form form .name-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group span,
+#submit-error {
+  color: red;
+  font-family: 'roboto', sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 footer {
@@ -460,10 +502,6 @@ footer {
 .work-link {
   display: none;
   z-index: 41;
-}
-
-.name-input {
-  display: none;
 }
 
 .desk {
@@ -665,9 +703,27 @@ footer {
   }
 
   .body {
-    background-image: url(../images/circle1.svg), url(../images/circle2.svg), url(../images/circle3.svg), url(../images/circle4.svg), url(../images/circle5.svg), url(../images/circle6.svg);
-    background-position: left 2%, right 13%, left 44%, right 59%, left 68%, right 78%;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-image:
+      url(../images/circle1.svg),
+      url(../images/circle2.svg),
+      url(../images/circle3.svg),
+      url(../images/circle4.svg),
+      url(../images/circle5.svg),
+      url(../images/circle6.svg);
+    background-position:
+      left 2%,
+      right 13%,
+      left 44%,
+      right 59%,
+      left 68%,
+      right 78%;
+    background-repeat:
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat;
     height: auto;
   }
 
@@ -683,7 +739,9 @@ footer {
     margin-left: 40px;
     width: 55%;
     height: 485px;
-    background: linear-gradient(0deg, #f9f9f9, #f9f9f9), url("image_processing20200716-21735-f07s4k.png");
+    background:
+      linear-gradient(0deg, #f9f9f9, #f9f9f9),
+      url("image_processing20200716-21735-f07s4k.png");
   }
 
   .cont {
@@ -722,7 +780,7 @@ footer {
   }
 
   .input-name {
-    display: none;
+    display: initial;
   }
 
   .contact-form form textarea {
