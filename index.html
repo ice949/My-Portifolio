@@ -125,15 +125,26 @@
                 If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
             </p>
         </div>
-        <form action="https://formspree.io/f/mjvlpkyw
-      " method="post">
+        <form action="signup.html" method="post" id="signup">
+            
+        </form>
+        <form action="https://formspree.io/f/mjvlpkyw" method="post" id="formdata" class="formdata">
             <div class="name-input">
-                <input type="text" id="f_name" name="u_name" placeholder="First Name" value="Jeremy" maxlength="30" required />
-                <input type="text" id="s_name" name="u_name" placeholder="Last Name" maxlength="30" required /></div>
-            <input type="text" class="input-name" id="user_name" name="u_name" placeholder="Text Input" maxlength="30" required />
-            <input type="email" class="email-input" id="email" name="email" placeholder="Email Address" value="jeremy@gmail.com" required />
-            <textarea name="message" id="message" cols="30" rows="10" maxlength="500" required placeholder="Your message here"></textarea>
-            <button class="btn" type="submit">See project</button>
+                <div class="input-group">
+                   <input type="text" class="input-name" id="contact-name" name="u_name" placeholder="Full Name" maxlength="30" required/>
+                   <span id="name-error"></span>    
+                </div>
+                <div class="input-group">
+                   <input type="email" class="email-input" id="contact-email" name="email" placeholder="Email Address" required/>
+                   <span id="email-error"></span>    
+                </div>
+                <div class="input-group">
+                   <textarea name="message" class="input-messege" id="contact-message" cols="30" rows="10" maxlength="500" placeholder="Your message here" required></textarea>
+                   <span id="message-error"></span>    
+                </div>
+            <button class="s-btn" type="submit">See project</button>
+            <span id="submit-error"></span>    
+            </div>
         </form>
     </section>
     <hr class="footer-line" />

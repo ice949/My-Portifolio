@@ -149,3 +149,28 @@ const modal = (id) => {
     return undefined;
   });
 };
+
+// email validation
+const nameError = document.getElementById('name-error');
+const emailError = document.getElementById('email-error');
+const messageError = document.getElementById('message-error');
+const submitError = document.getElementById('submit-error');
+
+function validateEmail(){
+  const email = document.getElementById('contact-email').value;
+
+  if(email.length == 0){
+    emailError.innerHTML = 'Email is required';
+    return false;
+    
+  }
+  else nameError.innerHTML=''
+  if(email.match(/[A-Z]/)){
+    emailError.innerHTML = 'Your Email should be lowercase';
+    return false;
+  }
+  nameError.innerHTML = '';
+  return true;
+}
+const emailInput = document.getElementById('contact-email')
+emailInput.addEventListener('input', validateEmail)
