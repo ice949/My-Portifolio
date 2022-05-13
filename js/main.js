@@ -156,6 +156,24 @@ const emailError = document.getElementById('email-error');
 const messageError = document.getElementById('message-error');
 const submitError = document.getElementById('submit-error');
 
+function validateName(){
+  const name = document.getElementById('contact-name').value;
+
+  if(name.length == 0){
+    nameError.innerHTML = 'Name is required';
+    return false; 
+  }
+
+ else if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+    nameError.innerHTML = 'Write Full Name';
+    return false;
+  }
+  nameError.innerHTML = '';
+  return true;
+}
+const nameInput = document.getElementById('contact-name')
+nameInput.addEventListener('input', validateName)
+
 function validateEmail(){
   const email = document.getElementById('contact-email').value;
 
