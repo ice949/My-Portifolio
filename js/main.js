@@ -156,39 +156,35 @@ const emailError = document.getElementById('email-error');
 const messageError = document.getElementById('message-error');
 const submitError = document.getElementById('submit-error');
 
-function validateName(){
+function validateName() {
   const name = document.getElementById('contact-name').value;
 
-  if(name.length == 0){
+  if (name.length === 0) {
     nameError.innerHTML = 'Name is required';
-    return false; 
+    return false;
   }
 
- else if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+  if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
     nameError.innerHTML = 'Write Full Name';
     return false;
   }
   nameError.innerHTML = '';
   return true;
 }
-const nameInput = document.getElementById('contact-name')
-nameInput.addEventListener('input', validateName)
 
-function validateEmail(){
-  const email = document.getElementById('contact-email').value;
+const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
+const email = document.getElementById('contact-email');
+const form = document.forms['contact-form'];
 
-  if(email.length == 0){
-    emailError.innerHTML = 'Email is required';
-    return false;
-    
-  }
-  else nameError.innerHTML=''
-  if(email.match(/[A-Z]/)){
+function validateEmail(e) {
+  e.preventDefault();
+
+  if (!isLowerCase(email.value)) {
     emailError.innerHTML = 'Your Email should be lowercase';
-    return false;
+  } else {
+    nameError.innerHTML = '';
+    form.submit();
   }
-  nameError.innerHTML = '';
-  return true;
 }
-const emailInput = document.getElementById('contact-email')
-emailInput.addEventListener('input', validateEmail)
+const validateForm = document.getElementById('formdata');
+validateForm.addEventListener('submit', (e) => { validateEmail(e); });
