@@ -159,7 +159,7 @@ const submitError = document.getElementById('submit-error');
 function validateName() {
   const name = document.getElementById('contact-name').value;
 
-  if (name.length === 0) {
+  if (namee.length === 0) {
     nameError.innerHTML = 'Name is required';
     return false;
   }
